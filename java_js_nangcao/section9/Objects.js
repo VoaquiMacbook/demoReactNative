@@ -23,7 +23,7 @@ const Objects = () => {
                 close: 24,
             },
         },
-
+        
         order: function (starterIndex, mainIndex) {
             return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
         },

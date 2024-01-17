@@ -18,6 +18,7 @@ import Demo7 from './src/demo/Demo7';
 // import demo js nangCao
 import Arrays from './java_js_nangcao/section9/Arrays';
 import Objects from './java_js_nangcao/section9/Objects';
+import SpreadOpertor from './java_js_nangcao/section9/SpreadOpertor';
 // import lab 
 import Bai1 from './labs/lab2/Bai1';
 import Bai2 from './labs/lab2/Bai2';
@@ -33,11 +34,11 @@ function App(): React.JSX.Element {
       <View>
         <Text style={myDemo1Style.welcome}>Võ A Qui</Text> 
         {/* <Asm1></Asm1> */}
-
+        <SpreadOpertor></SpreadOpertor>
       </View>
     </SafeAreaView>
   );
-}
+};
 
 export default App;
 const myDemo1Style = StyleSheet.create({
