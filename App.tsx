@@ -23,6 +23,7 @@ import SpreadOpertor from './java_js_nangcao/section9/SpreadOpertor';
 import Bai1 from './labs/lab2/Bai1';
 import Bai2 from './labs/lab2/Bai2';
 import Bai3 from './labs/lab2/Bai3';
+import Bai1_lab3 from './labs/lab3/Bai1_lab3';
 // import assignment
 import Asm1 from './assignment/Asm1';
 
@@ -34,7 +35,7 @@ function App(): React.JSX.Element {
       <View>
         <Text style={myDemo1Style.welcome}>Võ A Qui</Text> 
         {/* <Asm1></Asm1> */}
-        <SpreadOpertor></SpreadOpertor>
+      <Bai1_lab3></Bai1_lab3>
       </View>
     </SafeAreaView>
   );

@@ -76,9 +76,7 @@ const SpreadOpertor = () => {
     // console.log(letters);
 
     const ingredients = [
-        prompt("let's make pasta ingredient 1"),
-        prompt("Ingredient 2?"),
-        prompt("Ingredient 3?"),
+       
     ];
     console.log(ingredients);
 
@@ -100,7 +98,6 @@ const SpreadOpertor = () => {
                 id='ipInput'
                 onChangeText={handleInputChange}
                 style={style.ip}>
-
             </TextInput>
             <TouchableOpacity
             onPress={handleLogInputValue} 
