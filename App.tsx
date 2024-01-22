@@ -18,6 +18,7 @@ import Demo7 from './src/demo/Demo7';
 import Demo_secureTextEtry from './src/demo/Demo_secureTextEtry';
 import Demo_alert from './src/demo/Demo9_alert';
 import Demo8_1_modal from './src/demo/Demo9_1_modal';
+import Demo9_2_toogle from './src/demo/Demo9_2_toogle';
 // import demo js nangCao
 import Arrays from './java_js_nangcao/section9/Arrays';
 import Objects from './java_js_nangcao/section9/Objects';
@@ -45,7 +46,7 @@ function App(): React.JSX.Element {
       <View>
         <Text style={styles.welcome}>Võ A Qui</Text>
         {/* <Asm1></Asm1> */}
-       <Demo8_1_modal/>
+      <Demo9_2_toogle/>
       </View>
     </SafeAreaView>
   );

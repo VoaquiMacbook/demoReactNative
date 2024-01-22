@@ -33,7 +33,6 @@ const Demo_alert = () => {
             },
             { text: 'OK', onPress: () => console.log('OK Pressed') },
         ]);
-
     return (
         <View style={styles.container}>
             <Button title={'2-Button Alert'} onPress={createTwoButtonAlert} />
