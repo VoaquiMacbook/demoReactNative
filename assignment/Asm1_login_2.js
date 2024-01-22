@@ -16,6 +16,8 @@ const Asm1_2 = () => {
     setMessenger('')
     return;
   }
+  // state manage hidden
+  const [securePassword, setSecurePassword] = useState(true);
   return (
     <View style={asmStyle.container}>
       {/* <Text style={asmStyle.txt_color}>Asm1_2</Text> */}
@@ -30,12 +32,22 @@ const Asm1_2 = () => {
         <TextInput
           placeholder='Password'
           keyboardType='default'
-          secureTextEntry={true}
+          secureTextEntry={securePassword}
           style={[asmStyle.ip_input, asmStyle.ip_color,
           !isNameValid && asmStyle.error]}
           value={name}
           onChangeText={text => setName(text)}>
         </TextInput>
+        <TouchableOpacity
+          onPress={() => setSecurePassword(!securePassword)} f
+          style={asmStyle.ic_eye}>
+          {
+            securePassword ?
+              <Image source={require('../assignment/assets/images/ic_eyeOpen.png')} />
+              :
+              <Image source={require('../assignment/assets/images/ic_eyeLock.png')} />
+          }
+        </TouchableOpacity>
       </View>
 
       {!isNameValid && <Text style={{ color: 'red' }}>{messenger}</Text>}
@@ -136,5 +148,14 @@ const asmStyle = StyleSheet.create({
     width: 20,
     height: 20,
   },
+  // custom eye
+  ic_eye: {
+    position: 'absolute',
+    right: 15,
+    top: 15,
+    width: 30,
+    height: 19,
+  },
+
 
 })

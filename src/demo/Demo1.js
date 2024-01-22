@@ -26,7 +26,6 @@ const Demo1 = () => {
 
 console.log(cauThu);
 
-
     return (
         <View>
             <View>
