@@ -16,6 +16,8 @@ import Demo5 from './src/demo/Demo5';
 import Demo6 from './src/demo/Demo6';
 import Demo7 from './src/demo/Demo7';
 import Demo_secureTextEtry from './src/demo/Demo_secureTextEtry';
+import Demo_alert from './src/demo/Demo9_alert';
+import Demo8_1_modal from './src/demo/Demo9_1_modal';
 // import demo js nangCao
 import Arrays from './java_js_nangcao/section9/Arrays';
 import Objects from './java_js_nangcao/section9/Objects';
@@ -34,6 +36,7 @@ import Asm1 from './assignment/Asm1';
 import Bai2_lab3 from './labs/lab3/Bai2_lab3';
 
 
+
 function App(): React.JSX.Element {
 
   return (
@@ -42,8 +45,7 @@ function App(): React.JSX.Element {
       <View>
         <Text style={styles.welcome}>Võ A Qui</Text>
         {/* <Asm1></Asm1> */}
-        {/* <Demo_secureTextEtry/> */}
-       <Demo_secureTextEtry/>
+       <Demo8_1_modal/>
       </View>
     </SafeAreaView>
   );
