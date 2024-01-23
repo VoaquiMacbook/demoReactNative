@@ -6,6 +6,8 @@ import {
   Text,
   View,
 } from 'react-native';
+import AppNavigation from './src/app/AppNavigation';
+import { AppProvider } from './src/app/AppContext';
 // import demo
 import Demo1 from './src/demo/Demo1';
 import Demo2 from './src/demo/Demo2';
@@ -41,14 +43,20 @@ import Bai2_lab3 from './labs/lab3/Bai2_lab3';
 function App(): React.JSX.Element {
 
   return (
-    <SafeAreaView>
+    // <SafeAreaView>
+    //   <StatusBar />
+    //   <View>
+    //     <Text style={styles.welcome}>Võ A Qui</Text>
+    //     {/* <Asm1></Asm1> */}
+    //   <Demo9_2_toogle/>
+    //   </View>
+    // </SafeAreaView>
+    <AppProvider>
+    <SafeAreaView style={{ flex: 1 }}>
       <StatusBar />
-      <View>
-        <Text style={styles.welcome}>Võ A Qui</Text>
-        {/* <Asm1></Asm1> */}
-      <Demo9_2_toogle/>
-      </View>
+      <AppNavigation />
     </SafeAreaView>
+  </AppProvider>
   );
 };
 
