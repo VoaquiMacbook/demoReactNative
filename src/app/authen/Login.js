@@ -14,7 +14,7 @@ const Login = () => {
             <View>
                 <Image
                     style={styles.logo}
-                    source={require('../../../assets/images/pic.png')} />
+                    source={require('../../../assets/images/google.png')} />
             </View>
             <View style={styles.welcomeContainer}>
                 <Text style={styles.welcome}>Welcome to Lungo!!</Text>
@@ -41,11 +41,11 @@ const Login = () => {
                     {
                         securePassword ?
                             <Image
-                                source={require('../../../assets/images/pic.png')}
+                                source={require('../../../assets/images/google.png')}
                             />
                             :
                             <Image
-                                source={require('../../../assets/images/pic.png')}
+                                source={require('../../../assets/images/google.png')}
                             />
                     }
                 </TouchableOpacity>
@@ -61,7 +61,7 @@ const Login = () => {
                 <TouchableOpacity style={styles.buttonGG}>
                     <Image
                         style={styles.ggImage}
-                        source={require('../../../assets/images/pic.png')}
+                        source={require('../../../assets/images/google.png')}
                     />
                     <Text style={styles.buttonGGLabel}>Sign In With Google</Text>
                 </TouchableOpacity>
