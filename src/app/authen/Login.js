@@ -5,7 +5,8 @@ import {
 import React, { useState, useContext } from 'react'
 import { AppContext } from '../AppContext'
 
-const Login = () => {
+const Login = (props) => {
+    const {navigation} = props
     const { setIsLogin } = useContext(AppContext)
     // quản lý ẩn hiện password
     const [securePassword, setSecurePassword] = useState(true)
@@ -14,7 +15,7 @@ const Login = () => {
             <View>
                 <Image
                     style={styles.logo}
-                    source={require('../../../assets/images/google.png')} />
+                    source={require('../../../assets/images/img_logo.png')} />
             </View>
             <View style={styles.welcomeContainer}>
                 <Text style={styles.welcome}>Welcome to Lungo!!</Text>
@@ -41,11 +42,11 @@ const Login = () => {
                     {
                         securePassword ?
                             <Image
-                                source={require('../../../assets/images/google.png')}
+                                source={require('../../../assets/images/ic_eyeOpen.png')}
                             />
                             :
                             <Image
-                                source={require('../../../assets/images/google.png')}
+                                source={require('../../../assets/images/ic_eyeLock.png')}
                             />
                     }
                 </TouchableOpacity>
@@ -64,6 +65,14 @@ const Login = () => {
                         source={require('../../../assets/images/google.png')}
                     />
                     <Text style={styles.buttonGGLabel}>Sign In With Google</Text>
+                </TouchableOpacity>
+            </View>
+            
+            <View style={styles.buttonGGContainer}>
+                <TouchableOpacity 
+                onPress={() => navigation.navigate('Register')}
+                style={styles.buttonGG}>
+                    <Text style={styles.buttonGGLabel}>Go to register</Text>
                 </TouchableOpacity>
             </View>
         </View>
