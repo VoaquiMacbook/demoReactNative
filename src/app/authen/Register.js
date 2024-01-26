@@ -3,31 +3,33 @@ import React, {useState} from 'react'
 import AxiosInstance from './helpers/AxiosInstance';
 
 const Register = (porps) => {
-  const [name, setName] = useState('Võ A Qui');
-  const [email, setEmail] = useState('khoale@gmail.com');
+  const {navigation} = porps;
+  const [name, setName] = useState('Lê Anh Khoa');
+  const [email, setEmail] = useState('khoala@gmail.com');
   const [password, setPassword] = useState('123');
 
   const onPressRegister = async () => {
-    try {
-      const body ={
-        name: name,
-        email: email,
-        password: password,
-      }
-      const response = await AxiosInstance()
-      .post('/users/register', body)
-      console.log('Đăng ký thành công', response);
-      }catch (error) {
-     const body ={
-        name: name,
-        email: email,
-        password: password,
-      }
-      const response = await AxiosInstance()
-      .post('/users/register', body)
-      console.log('Đăng ký thành công', response);
-    }
+try {
+  const body = {
+    name: name,
+    email: email,
+    password: password,
   }
+  const response = await AxiosInstance()
+  .post('/users/register', body);
+  console.log('dang ky thanh cong', response);
+  if(response.status == true){
+    Alert.alert('dang ky thanh cong');
+    navigation.navigate('Login');
+  }else{
+    Alert.alert('dang ky co loi');
+  }
+} catch (error) {
+  console.log('dang ky loi', error);
+  Alert.alert('dang ky co loi');
+}
+  }
+  
   return (
     <View>
       <Text>Register</Text>
