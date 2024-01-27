@@ -4,14 +4,29 @@ import React from 'react'
 const Demo11_font = () => {
   return (
     <View>
-      <Text>
-      React Native là các doan code dà dugo viêt san (framework) do công ty công nghê
-Facebook phát trién. Cac läp trinh viên React Native là nguöi sü dung nhüng framework này de phát trién nên các hê thông, nên täng üng dung trên các hê diêu hänh nhu IOS và Android. Ngôn ngü läp trinh duo sü dung nhi@u nhät là Javascript.
-      </Text>
+      <View style={{ margin: '5%' }}>
+            <Text style={styles.txt_font}>
+                React Native là các doan code đã được viết sẵn (framework) do công ty công nghệ
+                Facebook phát triển. Các lập trình viên React Native là người sử dụng nhüng framework này để phát trién nên các hệ thống, nền tảng ứng dụng 
+                trên các hê diều hành như IOS và Android. Ngôn ngữ lập trình được sử dụng nhiều nhất là Javascript.
+            </Text>
+            <Text style={styles.txt_font_2}>
+                React Native là các doan code đã được viết sẵn (framework) do công ty công nghệ
+                Facebook phát triển. Các lập trình viên React Native là người sử dụng nhüng framework này để phát trién nên các hệ thống, nền tảng ứng dụng 
+                trên các hê diều hành như IOS và Android. Ngôn ngữ lập trình được sử dụng nhiều nhất là Javascript.
+            </Text>
+        </View>
     </View>
   )
 }
 
 export default Demo11_font
 
-const styles = StyleSheet.create({}) 
+const styles = StyleSheet.create({
+  welcome: {
+    fontSize: 20,
+    color: 'green',
+    fontWeight: 'bold',
+    textAlign: 'center'
+  }
+})
