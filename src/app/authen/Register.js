@@ -5,7 +5,7 @@ import AxiosInstance from './helpers/AxiosInstance';
 const Register = (porps) => {
   const {navigation} = porps;
   const [name, setName] = useState('Lê Anh Khoa');
-  const [email, setEmail] = useState('khoala@gmail.com');
+  const [email, setEmail] = useState('khoa989la@gmail.com');
   const [password, setPassword] = useState('123');
 
   const onPressRegister = async () => {
