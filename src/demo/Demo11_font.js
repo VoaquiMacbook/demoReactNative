@@ -1,7 +1,8 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const Demo11_font = () => {
+const Demo11_font = (props) => {
+  
   return (
     <View>
       <View style={{ margin: '5%' }}>

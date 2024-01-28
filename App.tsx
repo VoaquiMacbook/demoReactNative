@@ -22,7 +22,8 @@ import Demo_secureTextEtry from './src/demo/Demo_secureTextEtry';
 import Demo_alert from './src/demo/Demo9_alert';
 import Demo8_1_modal from './src/demo/Demo9_1_modal';
 import Demo9_2_toogle from './src/demo/Demo9_2_toogle';
-import Demo11_1_nextPage from './src/demo/Demo11_1_nextPage';
+import Demo11_1_nextPage from './src/demo/Demo11_1_navigationStack_2';
+import Demo12_navigationStack from './src/demo/Demo12_navigationStack';
 // import demo js nangCao
 import Arrays from './java_js_nangcao/section9/Arrays';
 import Objects from './java_js_nangcao/section9/Objects';
@@ -51,22 +52,29 @@ import Asm1 from './assignment/Asm1';
 function App(): React.JSX.Element {
 
   return (
-    <SafeAreaView>
-      <View >
-        <StatusBar translucent backgroundColor="rgba(0,0,0,0)" />
-        {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
+    // <SafeAreaView>
+    //   <View >
+    //     <StatusBar translucent backgroundColor="rgba(0,0,0,0)" />
+    //     {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
 
-        {/* <Asm1></Asm1> */}
+    //     {/* <Asm1></Asm1> */}
 
-        {/* <Bai1_lab5/> */}
-        {/* <Bai2_lab5 /> */}
-        {/* <Bai4_lab5 /> */}
+    //     {/* <Bai1_lab5/> */}
+    //     {/* <Bai2_lab5 /> */}
+    //     {/* <Bai4_lab5 /> */}
 
-        {/* <Bai1_lab6/> */}
+    //     {/* <Bai1_lab6/> */}
+    //     <Demo11_1_nextPage/>
+      
+    //   </View>
+    // </SafeAreaView>
+
+    <SafeAreaView style={{flex:1}}>
+      <StatusBar/>
+        {/* <Demo12_navigationStack /> */}
         <Demo11_1_nextPage/>
-        
-      </View>
     </SafeAreaView>
+
 
 
 
