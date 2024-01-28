@@ -39,6 +39,7 @@ import Lab4_bai3 from './labs/lab4/bai3_Lab4';
 import Bai1_lab5 from './labs/lab5/Bai1_lab5';
 import Bai2_lab5 from './labs/lab5/Bai2_lab5';
 import Bai3_lab5 from './labs/lab5/Bai3_lab5';
+import Bai4_lab5 from './labs/lab5/Bai4_lab5';
 // import assignment
 import Asm1 from './assignment/Asm1';
 
@@ -48,16 +49,18 @@ import Asm1 from './assignment/Asm1';
 function App(): React.JSX.Element {
 
   return (
-    // <SafeAreaView>
-    //   <View >
-    //   <StatusBar translucent backgroundColor="rgba(0,0,0,0)" />
+    <SafeAreaView>
+      <View >
+      <StatusBar translucent backgroundColor="rgba(0,0,0,0)" />
 
-    //     {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
-    //     {/* <Asm1></Asm1> */}
-    //     {/* <Bai2_lab5 /> */}
-    //   <Bai3_lab5/>
-    //   </View>
-    // </SafeAreaView>
+        {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
+        {/* <Asm1></Asm1> */}
+        {/* <Bai2_lab5 /> */}
+      {/* <Bai3_lab5/> */}
+      <Bai4_lab5/>
+
+      </View>
+    </SafeAreaView>
 
 
     // <ImageBackground
@@ -81,41 +84,41 @@ function App(): React.JSX.Element {
     //     </View>
     //   </ImageBackground>
 
-    <View style={styles.container}>
-      {/* Phần Header */}
+    // <View style={styles.container}>
+    //   {/* Phần Header */}
       
-      <View style={styles.header}>
-        <Image
-          source={{ uri: 'https://jpboxinggym.com/wp-content/uploads/2023/06/solo-female-traveller-bridge-1366x2048.jpg' }}
-          style={styles.headerImage}/>
-        {/* <TouchableOpacity style={styles.likeIcon} >
-          <Image source={require('./assets/images/google.png')}/>
-        </TouchableOpacity> */}
-      </View>
+    //   <View style={styles.header}>
+    //     <Image
+    //       source={{ uri: 'https://jpboxinggym.com/wp-content/uploads/2023/06/solo-female-traveller-bridge-1366x2048.jpg' }}
+    //       style={styles.headerImage}/>
+    //     {/* <TouchableOpacity style={styles.likeIcon} >
+    //       <Image source={require('./assets/images/google.png')}/>
+    //     </TouchableOpacity> */}
+    //   </View>
 
-      {/* Phần Body */}
+    //   {/* Phần Body */}
       
-      <View style={styles.body}>
-        {/* Nội dung chi tiết chuyến đi */}
-        <TouchableOpacity style={styles.likeIcon} >
-          <Image source={require('./assets/images/google.png')}/>
-        </TouchableOpacity>
-        <Text>Quảng Nam</Text>
-        <Text style={{marginTop:12, fontWeight:'bold'}}>Thông tin chuyến đi</Text>
-        <Text numberOfLines={6} ellipsizeMode="tail" style={styles.tripInfo}>
-          Höi An là m§t thanh phö truc thude tinh Quang Nam, Viet Nam. Phô co Höi An tung là möt thurong cang quôc te säm uät, göm nhüng di san kien trúc dä co tur häng träm nam truóc, duroc UNESCO cong nhan là di sán vän hãa the giói tù näm 1999.Höi An là mot thanh phö truc thuôc tinh Qung Nam, Vi@t Nam. Phö co Höi An türng
-        </Text>
-      </View>
+    //   <View style={styles.body}>
+    //     {/* Nội dung chi tiết chuyến đi */}
+    //     <TouchableOpacity style={styles.likeIcon} >
+    //       <Image source={require('./assets/images/google.png')}/>
+    //     </TouchableOpacity>
+    //     <Text>Quảng Nam</Text>
+    //     <Text style={{marginTop:12, fontWeight:'bold'}}>Thông tin chuyến đi</Text>
+    //     <Text numberOfLines={6} ellipsizeMode="tail" style={styles.tripInfo}>
+    //       Höi An là m§t thanh phö truc thude tinh Quang Nam, Viet Nam. Phô co Höi An tung là möt thurong cang quôc te säm uät, göm nhüng di san kien trúc dä co tur häng träm nam truóc, duroc UNESCO cong nhan là di sán vän hãa the giói tù näm 1999.Höi An là mot thanh phö truc thuôc tinh Qung Nam, Vi@t Nam. Phö co Höi An türng
+    //     </Text>
+    //   </View>
 
-      {/* Phần Footer */}
-      <View style={styles.footer}>
-        {/* Giá tiền và nút đặt */}
-        <Text style={styles.price}>$100/Ngày</Text>
-        <TouchableOpacity style={styles.bookButton}>
-          <Text style={styles.bookButtonText}>Đặt ngay</Text>
-        </TouchableOpacity>
-      </View>
-    </View>
+    //   {/* Phần Footer */}
+    //   <View style={styles.footer}>
+    //     {/* Giá tiền và nút đặt */}
+    //     <Text style={styles.price}>$100/Ngày</Text>
+    //     <TouchableOpacity style={styles.bookButton}>
+    //       <Text style={styles.bookButtonText}>Đặt ngay</Text>
+    //     </TouchableOpacity>
+    //   </View>
+    // </View>
   );
 };
 
@@ -172,7 +175,7 @@ const styles = StyleSheet.create({
     shadowRadius: 0.1,
     shadowOpacity: 0.1,
   },
-  
+
   container: {
     flex: 1,
   },

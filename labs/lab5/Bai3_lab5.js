@@ -1,84 +1,86 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet, ImageBackground } from 'react-native';
 
 const Bai3_lab5 = () => {
   return (
-    <View style={styles.container}>
-    {/* Phần Header */}
-    <View style={styles.header}>
-      <Image
-        source={{ uri: 'https://jpboxinggym.com/wp-content/uploads/2023/06/solo-female-traveller-bridge-1366x2048.jpg' }}
-        style={styles.headerImage}
-      />
-      <TouchableOpacity style={styles.likeIcon}>
-        {/* Icon trái tim hoặc hình ảnh khác */}
-      
-      </TouchableOpacity>
-    </View>
 
-    {/* Phần Body */}
-    <View style={styles.body}>
-      {/* Nội dung chi tiết chuyến đi */}
-      <Text numberOfLines={6} ellipsizeMode="tail" style={styles.tripInfo}>
-        {/* Nội dung chi tiết chuyến đi sẽ được đặt ở đây */}
-      </Text>
-    </View>
+    <ImageBackground
+      style={styles.container}
+      source={{ uri: 'https://jpboxinggym.com/wp-content/uploads/2023/06/solo-female-traveller-bridge-1366x2048.jpg' }}
+    >
+      <View style={styles.vertical}>
+        <View style={[styles.horizontal]}>
+          <Text style={[styles.txt_color, styles.flex]}>icon flet</Text>
+          <Text style={[styles.txt_color]}>icon 3 cham</Text>
+        </View>
 
-    {/* Phần Footer */}
-    <View style={styles.footer}>
-      {/* Giá tiền và nút đặt */}
-      <Text style={styles.price}>$100</Text>
-      <TouchableOpacity style={styles.bookButton}>
-        <Text style={styles.bookButtonText}>Đặt ngay</Text>
-      </TouchableOpacity>
-    </View>
-  </View>
+
+        <View style={[styles.header]}>
+          <Text style={[styles.txt_color,]}>header</Text>
+
+        </View>
+        <View style={styles.body}>
+          <Text style={[styles.txt_color,]}>header</Text>
+
+          <View style={[styles.footer]}>
+            <Text style={[styles.txt_color,]}>footer</Text>
+          </View>
+        </View>
+
+      </View>
+    </ImageBackground>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  header: {
-    flex: 7,
-    position: 'relative',
-  },
-  headerImage: {
-    flex: 1,
-    width: '100%',
-    resizeMode: 'cover',
-  },
-  likeIcon: {
-    position: 'absolute',
-    top: 20,
-    right: 20,
-    // Icon styles
-  },
-  body: {
-    flex: 3,
-    padding: 20,
-  },
-  tripInfo: {
-    // Styles for trip information
-  },
-  footer: {
-    height: 60,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: '#fff', // Màu nền của Footer
-    paddingHorizontal: 20,
-  },
-  price: {
-    // Styles for price text
-  },
-  bookButton: {
-    // Styles for book button
-  },
-  bookButtonText: {
-    // Styles for book button text
-  },
-});
+
 
 export default Bai3_lab5;
+const styles = StyleSheet.create({
+  // container
+  container: {
+    width: '100%',
+    height: '100%',
+  },
+  container_mg: {
+    margin: '5%'
+  },
+  // cloumn, row
+  vertical: {
+    flexDirection: 'column',
+  },
+  horizontal: {
+    flexDirection: 'row',
+  },
+  // flex
+  flex: {
+    flex: 1,
+  },
+  // position
+  position_asl: {
+    position: 'absolute'
+  },
+  // text
+  txt_color: {
+    color: 'white',
+    margin: '5%',
+  },
+  // custom header
+  header: {
+    backgroundColor: 'green',
+  },
+  // custom body
+  body: {
+    backgroundColor: 'white',
+    borderStartEndRadius: 40,
+    borderTopLeftRadius: 40,
+    
+  },
+  // custom footer
+  footer: {
+    borderStartEndRadius: 40,
+    borderTopLeftRadius: 40,
+    backgroundColor: 'blue',
+    height: 80,
+  }
+
+});
