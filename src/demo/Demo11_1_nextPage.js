@@ -1,13 +1,15 @@
 import { StyleSheet, Text, View,TouchableOpacity } from 'react-native'
 import React from 'react'
 
+
+
 const Demo11_1_nextPage = (props) => {
     const {navigation} = props
     return (
         <View >
             <Text>Demo11_1_nextPage</Text>
             <TouchableOpacity
-                onPress={() => navigation.navigate('')}
+                onPress={() => navigation.navigate('Demo1')}
                 style={styles.buttonGG}>
                 <Text style={styles.buttonGGLabel}>next page </Text>
             </TouchableOpacity>

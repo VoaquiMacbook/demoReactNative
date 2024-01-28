@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-const Demo1 = () => {
+const Demo1 = (props) => {
+    const {navigation} = props
     const name = 'nguyen van a'
     const players = [
         { name: 'Voaqui', goals: 30 },
