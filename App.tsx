@@ -22,6 +22,7 @@ import Demo_secureTextEtry from './src/demo/Demo_secureTextEtry';
 import Demo_alert from './src/demo/Demo9_alert';
 import Demo8_1_modal from './src/demo/Demo9_1_modal';
 import Demo9_2_toogle from './src/demo/Demo9_2_toogle';
+import Demo11_1_nextPage from './src/demo/Demo11_1_nextPage';
 // import demo js nangCao
 import Arrays from './java_js_nangcao/section9/Arrays';
 import Objects from './java_js_nangcao/section9/Objects';
@@ -61,7 +62,8 @@ function App(): React.JSX.Element {
         {/* <Bai2_lab5 /> */}
         {/* <Bai4_lab5 /> */}
 
-        <Bai1_lab6/>
+        {/* <Bai1_lab6/> */}
+        <Demo11_1_nextPage/>
         
       </View>
     </SafeAreaView>
