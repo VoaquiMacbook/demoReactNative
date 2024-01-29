@@ -4,7 +4,7 @@ import { Colors } from 'react-native/Libraries/NewAppScreen'
 import Demo1 from '../../src/demo/Demo1'
 
 
-const Bai1_lab6 = (prpos) => {
+const Bai1_lab6 = (props) => {
     const colorText = (color) => {
         return { color };
     };
@@ -14,7 +14,10 @@ const Bai1_lab6 = (prpos) => {
     const styleText = (styles) => {
         return styles;
     };
-    
+    const {navigation} = props;
+    const goToPagechiTiet = () => {
+        navigation.navigate('Bai1_lab6_PagechiTiet', ); // cách chuyền data
+    }
 
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
@@ -40,11 +43,22 @@ const Bai1_lab6 = (prpos) => {
         }
     };
     const handleLogInputValue = () => {
+        if (!name.trim()) {
+            // Kiểm tra nếu tên trống
+            alert('Tên không được để trống!');
+            return; // Dừng hàm nếu có lỗi
+        }
         if (!/^\d+$/.test(phone)) {
             // Kiểm tra nếu số điện thoại không phải là số
             alert('Số điện thoại phải là số!');
             return; // Dừng hàm nếu có lỗi
         }
+        if (!password.trim()) {
+            // Kiểm tra nếu tên trống
+            alert('Mật khẩu không được để trống!');
+            return; // Dừng hàm nếu có lỗi
+        }
+8
         setFinalResult(`Họ và tên: ${name}`);
         setFinalPhone(`Số điện thoại: ${phone}`);
         setFinalPassword(`Mật khẩu: ${password}`);
@@ -53,14 +67,14 @@ const Bai1_lab6 = (prpos) => {
         setName('');
         setPhone('');
         setPassword('');
-
+        navigation.navigate('Bai1_lab6_PagechiTiet', { name: `${name}` ,phone: `${phone}`, password: `${password}` } );
         
 
     }
     const [showDemo1, setDemo1] = useState(false);
     return (
         <View style={styles.container}>
-            <Text style={styles.txt_titile}>Chào bạn, đay là màn hình chính</Text>
+            <Text style={styles.txt_titile}>Chào bạn, đây là màn hình chính</Text>
             <TextInput
                 placeholder='Nhập họ tên'
                 id='ip_name'
@@ -93,9 +107,10 @@ const Bai1_lab6 = (prpos) => {
             </View>
             {/* <Text>Tên: {name}</Text>
             <Text>Phone: {phone}</Text> */}
-            <Text>{finalResult}</Text>
+
+            {/* <Text>{finalResult}</Text>
             <Text>{finalPhone}</Text>
-            <Text>{finalPassword}</Text>
+            <Text>{finalPassword}</Text> */}
             
             
 

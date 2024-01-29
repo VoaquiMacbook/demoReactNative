@@ -42,7 +42,9 @@ import Bai1_lab5 from './labs/lab5/Bai1_lab5';
 import Bai2_lab5 from './labs/lab5/Bai2_lab5';
 import Bai3_lab5 from './labs/lab5/Bai3_lab5';
 import Bai4_lab5 from './labs/lab5/Bai4_lab5';
-import Bai1_lab6 from './labs/lab6/Bai1_lab6';
+import Bai1_lab6 from './labs/lab6/Bai1_lab6_PageChinh'; 
+import Bai1_2_lab6 from './labs/lab6/Bai1_2_lab6_NavigationStack';
+
 // import assignment
 import Asm1 from './assignment/Asm1';
 
@@ -65,14 +67,17 @@ function App(): React.JSX.Element {
 
     //     {/* <Bai1_lab6/> */}
     //     <Demo11_1_nextPage/>
-      
+
     //   </View>
     // </SafeAreaView>
 
-    <SafeAreaView style={{flex:1}}>
-      <StatusBar/>
-        {/* <Demo12_navigationStack /> */}
-        <Demo11_1_nextPage/>
+    <SafeAreaView style={{ flex: 1 }}>
+      <StatusBar />
+      {/* <Demo12_navigationStack /> */}
+      {/* <Demo11_1_nextPage/> */}
+      {/* <Bai1_lab6 /> */}
+      <Bai1_2_lab6/>
+
     </SafeAreaView>
 
 

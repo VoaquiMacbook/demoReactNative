@@ -20,7 +20,7 @@ const Screen1 = (props) => {
 const Screen2 = (props) => {
     // const {navigation, route: { params: { name, age } } } = props;  // nhận data C1
 
-    // const name = props.route?.params?.name; // nhận data C2
+    const name = props.route?.params?.name; // nhận data C2
     
     const goToScreen1 = () => {
         navigation.navigate('Screen1');
