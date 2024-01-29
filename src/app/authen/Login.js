@@ -9,8 +9,8 @@ import Asm1_3 from '../../../assignment/Asm1_login_4';
 
 
 const Login = (props) => {
-    // const {navigation} = props
-    // const { setIsLogin } = useContext(AppContext)
+    const {navigation} = props;
+    const { setIsLogin } = useContext(AppContext)
     // // quản lý ẩn hiện password
     // const [securePassword, setSecurePassword] = useState(true)
 
@@ -26,8 +26,10 @@ const Login = (props) => {
         }
         setIsNamevalid(true);
         setMessenger('')
-        return;
+
+        return  setIsLogin(true);
     }
+    
     // state manage hidden
     const [securePassword, setSecurePassword] = useState(true);
     return (

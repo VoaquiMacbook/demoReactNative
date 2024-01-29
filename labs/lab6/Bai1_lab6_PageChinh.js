@@ -58,7 +58,7 @@ const Bai1_lab6 = (props) => {
             alert('Mật khẩu không được để trống!');
             return; // Dừng hàm nếu có lỗi
         }
-8
+
         setFinalResult(`Họ và tên: ${name}`);
         setFinalPhone(`Số điện thoại: ${phone}`);
         setFinalPassword(`Mật khẩu: ${password}`);

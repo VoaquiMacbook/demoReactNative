@@ -103,7 +103,7 @@ const Register = (porps) => {
         {/* <Text style={asmStyle.txt_color}>Asm1_register_4</Text> */}
         <View style={[asmStyle.row04, asmStyle.row_center04, asmStyle.row_mgtop04]}>
           <Text style={[asmStyle.txt_color_gray04]}>You have an account? Click </Text>
-          <Text style={[asmStyle.txt_color_register04]}>Sign in </Text>
+          <Text onPress={() => navigation.navigate('Login')} style={[asmStyle.txt_color_register04]}>Sign in </Text>
         </View>
 
       </View>

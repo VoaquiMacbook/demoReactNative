@@ -75,34 +75,7 @@ function App(): React.JSX.Element {
         <AppNavigation />
       </SafeAreaView>
     </AppProvider>
-    //   <View >
-    //     <StatusBar translucent backgroundColor="rgba(0,0,0,0)" />
-    //     {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
-
-    //     {/* <Asm1></Asm1> */}
-
-    //     {/* <Bai1_lab5/> */}
-    //     {/* <Bai2_lab5 /> */}
-    //     {/* <Bai4_lab5 /> */}
-
-    //     {/* <Bai1_lab6/> */}
-    //     <Demo11_1_nextPage/>
-
-    //   </View>
-    // </SafeAreaView>
-
-    // <SafeAreaView style={{ flex: 1 }}>
-    //   <StatusBar />
-    //   {/* <Demo12_navigationStack /> */}
-    //   {/* <Demo11_1_nextPage/> */}
-    //   {/* <Bai1_lab6 /> */}
-    //   <Bai1_2_lab6/>
-
-    // </SafeAreaView>
-
-
-
-
+   
 
 
     // bai2_lab5
