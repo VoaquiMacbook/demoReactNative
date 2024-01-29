@@ -5,10 +5,10 @@ const Asm1_settingedit_2 = () => {
   return (
     <View>
       {/* <Text style={asmStyle.txt_color}>Asm1_settingedit_2</Text> */}
-      <View style={[asmStyle.container]}>
+      <View style={[asmStyle.container02]}>
         {/* <Text style={asmStyle.txt_color}>Asm1_1</Text> */}
         <View style={{ alignItems: 'center' }}>
-          <Image style={asmStyle.img} source={require('../assignment/assets/images/img_avt.png')}>
+          <Image style={asmStyle.img02} source={require('../assignment/assets/images/img_avt.png')}>
           </Image>
         </View>
       </View>
@@ -18,16 +18,16 @@ const Asm1_settingedit_2 = () => {
 
 export default Asm1_settingedit_2
 const asmStyle = StyleSheet.create({
-  container: {
+  container02: {
     flexDirection: 'column',
   },
   // custom text
-  txt_color: {
+  txt_color02: {
     color: 'white',
 
   },
   // custom img
-  img: {
+  img02: {
     width: 150,
     height: 150,
     marginTop: 20,

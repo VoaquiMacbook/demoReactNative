@@ -7,8 +7,8 @@ const Asm1_register_3 = () => {
             {/* <Text style={asmStyle.txt_color}>Asm1_register_3</Text> */}
             <View style={{ marginTop: 30 }}>
                 <TouchableOpacity
-                    style={asmStyle.btn_container}>
-                    <Text style={asmStyle.btn_text}> Register</Text>
+                    style={asmStyle.btn_container03}>
+                    <Text style={asmStyle.btn_text03}> Register</Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -20,18 +20,18 @@ const asmStyle = StyleSheet.create({
 
     },
     // custom text
-    txt_color: {
+    txt_color03: {
         color: 'white'
     },
     // custom touchableOpacity 
-    btn_container: {
+    btn_container03: {
         flexDirection: 'column',
         backgroundColor: '#FA7C0F',
         width: '99%',
         height: 60,
         borderRadius: 20,
     },
-    btn_text: {
+    btn_text03: {
         textAlign: 'center',
         lineHeight: 53,
         color: 'white',

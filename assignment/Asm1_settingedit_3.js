@@ -10,7 +10,7 @@ const Asm1_settingedit_3 = () => {
                 <TextInput
                     placeholder=' Name'
                     keyboardType='default'
-                    style={[asmStyle.ip_input, asmStyle.ip_color]}>
+                    style={[asmStyle.ip_input03, asmStyle.ip_color03]}>
                 </TextInput>
             </View>
             <View style={{ marginTop: 20 }}>
@@ -18,7 +18,7 @@ const Asm1_settingedit_3 = () => {
                     placeholder='Emaill'
                     keyboardType='email-address'
                     secureTextEntry={true}
-                    style={[asmStyle.ip_input, asmStyle.ip_color]}>
+                    style={[asmStyle.ip_input03, asmStyle.ip_color03]}>
                 </TextInput>
             </View>
             <View style={{ marginTop: 20 }}>
@@ -26,7 +26,7 @@ const Asm1_settingedit_3 = () => {
                     placeholder='Password'
                     keyboardType='default'
                     secureTextEntry={true}
-                    style={[asmStyle.ip_input, asmStyle.ip_color]}>
+                    style={[asmStyle.ip_input03, asmStyle.ip_color03]}>
                 </TextInput>
             </View>
             <View style={{ marginTop: 20 }}>
@@ -34,7 +34,7 @@ const Asm1_settingedit_3 = () => {
                     placeholder='Re-type-password'
                     keyboardType='default'
                     secureTextEntry={true}
-                    style={[asmStyle.ip_input, asmStyle.ip_color]}>
+                    style={[asmStyle.ip_input03, asmStyle.ip_color03]}>
                 </TextInput>
             </View>
         </View>
@@ -44,22 +44,22 @@ const Asm1_settingedit_3 = () => {
 
 export default Asm1_settingedit_3
 const asmStyle = StyleSheet.create({
-    container: {
+    container03: {
         
     },
     // custom text
-    txt_color: {
+    txt_color03: {
         color: 'white'
     },
      // custom input
-     ip_input: {
+     ip_input03: {
         borderWidth: 1,
         borderColor: 'gray',
         borderRadius: 10,
         height: 60,
         backgroundColor: 'white'
     },
-    ip_color: {
+    ip_color03: {
         color: 'gray',
         paddingStart: 10,
     }

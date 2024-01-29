@@ -37,7 +37,10 @@ import Lab4_bai3 from './labs/lab4/Lab4_bai3';
 // import assignment
 import Asm1 from './assignment/Asm1';
 import Bai2_lab3 from './labs/lab3/Bai2_lab3';
-
+// asm
+import Login from './assignment/Login';
+import Setting from './src/app/main/stacks/Setting';
+import Personal from './src/app/main/stacks/Personal';
 
 
 function App(): React.JSX.Element {
@@ -46,17 +49,19 @@ function App(): React.JSX.Element {
     // <SafeAreaView>
     //   <StatusBar />
     //   <View>
-    //     <Text style={styles.welcome}>Võ A Qui</Text>
+    //     {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
     //     {/* <Asm1></Asm1> */}
-    //   <Demo9_2_toogle/>
+    //     <Login />
     //   </View>
     // </SafeAreaView>
+
     <AppProvider>
-    <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar />
-      <AppNavigation />
-    </SafeAreaView>
-  </AppProvider>
+      <SafeAreaView style={{ flex: 1 }}>
+        <StatusBar />
+        {/* <AppNavigation /> */}
+        <Personal />
+      </SafeAreaView>
+    </AppProvider>
   );
 };
 

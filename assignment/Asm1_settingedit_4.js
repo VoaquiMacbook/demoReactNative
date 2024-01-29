@@ -8,8 +8,8 @@ const Asm1_settingedit_4 = () => {
       <View>
             <View style={{ marginTop: 30 }}>
                 <TouchableOpacity
-                    style={asmStyle.btn_container}>
-                    <Text style={asmStyle.btn_text}>Save</Text>
+                    style={asmStyle.btn_container04}>
+                    <Text style={asmStyle.btn_text04}>Save</Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -23,17 +23,17 @@ const asmStyle = StyleSheet.create({
         
     },
      // custom text
-     txt_color: {
+     txt_color04: {
         color: 'white'
     },
-    btn_container: {
+    btn_container04: {
         flexDirection: 'column',
         backgroundColor: '#FA7C0F',
         width: '99%',
         height: 60,
         borderRadius: 20,
     },
-    btn_text: {
+    btn_text04: {
         textAlign: 'center',
         lineHeight: 53,
         color: 'white',

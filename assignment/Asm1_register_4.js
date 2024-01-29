@@ -21,31 +21,31 @@ const asmStyle = StyleSheet.create({
 
     },
     // custom text
-    txt_color: {
+    txt_color04: {
         color: 'white',
 
     },
-    txt_color_register: {
+    txt_color_register04: {
         color: '#FA7C0F',
         fontWeight: 'bold'
     },
-    txt_color_gray: {
+    txt_color_gray04: {
         color: 'gray',
         fontWeight: 'bold',
         fontSize: 15,
 
     },
     // custom row
-    row: {
+    row04: {
         flexDirection: 'row',
     },
-    row_flex: {
+    row_flex04: {
         flex: 1, // Để text chiếm phần còn lại của dòng
     },
-    row_center: {
+    row_center04: {
         justifyContent: 'center'
     },
-    row_mgtop: {
+    row_mgtop04: {
         marginTop: 5,
     }
 })

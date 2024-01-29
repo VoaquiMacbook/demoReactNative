@@ -6,17 +6,17 @@ const Asm1_setting_1 = () => {
     <View>
       {/* <Text style={asmStyle.txt_color}>Asm1_setting_1</Text> */}
       <View style={{ marginTop: 10 }}>
-        <View style={asmStyle.view_container_2}>
-          <View style={asmStyle.view_row}>
+        <View style={asmStyle.view_container_2_01}>
+          <View style={asmStyle.view_row01}>
             <View>
-              <TouchableOpacity style={[asmStyle.btn_setting]}>
-                <View style={asmStyle.img_container}>
-                  <Image style={asmStyle.img} source={require('../assignment/assets/images/arrow_left.png')}></Image>
+              <TouchableOpacity style={[asmStyle.btn_setting01]}>
+                <View style={asmStyle.img_container01}>
+                  <Image style={asmStyle.img01} source={require('../assignment/assets/images/arrow_left.png')}></Image>
                 </View>
               </TouchableOpacity>
             </View>
-            <View style={asmStyle.textColumn}>
-              <Text style={asmStyle.view_text_2}>Setting</Text>
+            <View style={asmStyle.textColumn01}>
+              <Text style={asmStyle.view_text_2_01}>Setting</Text>
             </View>
           </View>
         </View>
@@ -31,17 +31,17 @@ const asmStyle = StyleSheet.create({
 
   },
   // custom text
-  txt_color: {
+  txt_color01: {
     color: 'white',
 
   },
   // custom view
-  view_container_2: {
+  view_container_2_01: {
     width: '99%',
     height: 60,
     borderRadius: 20,
   },
-  view_text_2: {
+  view_text_2_01: {
     lineHeight: 53,
     color: 'white',
     fontSize: 20,
@@ -50,27 +50,27 @@ const asmStyle = StyleSheet.create({
 
 
   },
-  view_row: {
+  view_row01: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  textColumn: {
+  textColumn01: {
     flex: 1, // Để text chiếm phần còn lại của dòng
   },
   // custom img
-  img: {
+  img01: {
     width: 20,
     height: 20,
     marginVertical: '20%',
   },
-  img_container: {
+  img_container01: {
     width: '100%',
     height: '100%',
     alignItems: 'center'
   },
   // custom button setting
-  btn_setting: {
+  btn_setting01: {
     width: 33,
     height: 35,
     backgroundColor: '#868584',
