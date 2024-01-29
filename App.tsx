@@ -58,8 +58,7 @@ function App(): React.JSX.Element {
     <AppProvider>
       <SafeAreaView style={{ flex: 1 }}>
         <StatusBar />
-        {/* <AppNavigation /> */}
-        <Personal />
+        <AppNavigation />
       </SafeAreaView>
     </AppProvider>
   );
