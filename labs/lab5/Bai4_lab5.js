@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
   },
   // custom body
   body: {
-    flex: 3,
+    flex: 3.1,
     backgroundColor: 'white',
     borderStartEndRadius: 40,
     borderTopLeftRadius: 40,
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     position: 'absolute',
     marginHorizontal: 330,
-    marginVertical: 410,
+    marginVertical: 390,
     backgroundColor: 'white',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.5,
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
     height: '6%',
     position: 'absolute',
     marginHorizontal: 330,
-    marginVertical: 370,
+    marginVertical: 350,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.5,
     shadowRadius: 10,

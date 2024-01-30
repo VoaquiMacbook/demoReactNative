@@ -67,7 +67,9 @@ function App(): React.JSX.Element {
     //   <View>
     //     {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
     //     {/* <Asm1></Asm1> */}
-    //     <Login />
+    //     {/* <Bai1_lab5/> */}
+    //     {/* <Bai2_lab5/> */}
+    //     {/* <Bai4_lab5/> */}
     //   </View>
     // </SafeAreaView>
 
@@ -79,20 +81,6 @@ function App(): React.JSX.Element {
         <Bai1_2_lab6/>
       </SafeAreaView>
     </AppProvider>
-   
-    // <SafeAreaView style={{ flex: 1 }}>
-    //   <StatusBar />
-    //   {/* <Demo12_navigationStack /> */}
-    //   {/* <Demo11_1_nextPage/> */}
-    //   {/* <Bai1_lab6 /> */}
-    //   {/* <Bai1_2_lab6/> */}
-    //   <Bai2_lab6_drawerNavigation />
-
-    // </SafeAreaView>
-
-
-
-
 
 
     // bai2_lab5
@@ -129,5 +117,52 @@ const styles = StyleSheet.create({
     color: 'green',
     fontWeight: 'bold',
     textAlign: 'center'
-  }
+  },
+
+  // bai 3 lab5
+  background2: {
+    width: '100%',
+    height: '100%',
+  },
+  content2: {
+    // Phần nội dung của ứng dụng
+    marginVertical: '80%'
+
+  },
+  txt_content2: {
+    color: 'white',
+    fontSize: 30,
+    width: 280,
+    fontWeight: '600',
+    padding: 10,
+    paddingStart: '20%',
+    paddingBottom: 20,
+  },
+  txt_content_s2: {
+    color: 'white',
+    fontSize: 12,
+    width: 360,
+    fontWeight: '600',
+    paddingBottom: 10,
+    paddingStart: '20%',
+  },
+  txt_content_m2: {
+    color: 'gray',
+    fontSize: 10,
+    width: 330,
+    fontWeight: '800',
+    padding: 11,
+  },
+  btn_container2: {
+    backgroundColor: 'white',
+    width: '22%',
+    height: '18%',
+    borderRadius: 5,
+    justifyContent: 'center',
+    marginHorizontal: '20%',
+    marginTop: '5%',
+    shadowRadius: 0.1,
+    shadowOpacity: 0.1,
+  },
 });
+
