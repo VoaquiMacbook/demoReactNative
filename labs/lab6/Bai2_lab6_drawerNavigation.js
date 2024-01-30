@@ -27,12 +27,12 @@ const Drawer = createDrawerNavigator();
 
 const Bai2_lab6_drawerNavigation = () => {
     return (
-        <NavigationContainer> 
+       
           <Drawer.Navigator initialRouteName="Màng hình chính">
             <Drawer.Screen name="Màng hình chính" component={Bai1_lab6} />
             <Drawer.Screen name="màng hình chi tiết" component={Bai1_3_lab6_PagechiTiet} />
           </Drawer.Navigator>
-        </NavigationContainer>
+       
       );
 }
 

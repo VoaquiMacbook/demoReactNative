@@ -75,8 +75,8 @@ function App(): React.JSX.Element {
       <SafeAreaView style={{ flex: 1 }}>
         <StatusBar />
         {/* <AppNavigation /> */}
-        <Bai2_lab6_drawerNavigation />
-        {/* <Bai1_2_lab6/> */}
+        {/* <Bai2_lab6_drawerNavigation /> */}
+        <Bai1_2_lab6/>
       </SafeAreaView>
     </AppProvider>
    

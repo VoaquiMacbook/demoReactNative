@@ -29,7 +29,7 @@ const Bai1_2_lab6 = (props) => {
           // },
 
         }}
-        initialRouteName='Bai1_lab6_PageChinh'>
+        initialRouteName='Bai2_lab6_drawerNavigation'>
         <Stack.Screen name="Bai2_lab6_drawerNavigation" component={Bai2_lab6_drawerNavigation} />
         <Stack.Screen name="Bai1_lab6_PageChinh" component={Bai1_lab6} />
         <Stack.Screen name="Bai1_lab6_PagechiTiet" component={Bai1_3_lab6_PagechiTiet} />
