@@ -94,6 +94,7 @@ const Register = (porps) => {
         {/* <Text style={asmStyle.txt_color}>Asm1_register_3</Text> */}
         <View style={{ marginTop: 30 }}>
           <TouchableOpacity
+            onPress={onPressRegister}
             style={asmStyle.btn_container03}>
             <Text style={asmStyle.btn_text03}> Register</Text>
           </TouchableOpacity>
@@ -119,7 +120,7 @@ const asmStyle = StyleSheet.create({
     width: '100%',
     height: '100%',
     backgroundColor: 'black',
-    padding:26,
+    padding: 26,
   },
   // custom text
   txt_color01: {

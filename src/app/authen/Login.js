@@ -97,6 +97,7 @@ const Login = (props) => {
                     </View>
                     <View style={{ marginTop: 10 }}>
                         <TouchableOpacity
+                        
                             style={asmStyle.btn_container_2_02}>
                             <View style={asmStyle.btn_row02}>
                                 <View>
@@ -116,7 +117,7 @@ const Login = (props) => {
             <View style={{ flexDirection: 'column' }}>
                 <View style={[asmStyle.row03, asmStyle.row_center03]}>
                     <Text style={[asmStyle.txt_color_gray03]}>Don't have account? Click </Text>
-                    <Text style={[asmStyle.txt_color_register03]}>Register</Text>
+                    <Text onPress={() => navigation.navigate('Register')} style={[asmStyle.txt_color_register03]}>Register</Text>
                 </View>
                 <View style={[asmStyle.row03, asmStyle.row_center03, asmStyle.row_mgtop03]}>
                     <Text style={[asmStyle.txt_color_gray03]}>Forget Password? Click </Text>
