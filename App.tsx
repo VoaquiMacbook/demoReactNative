@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 import {
   SafeAreaView,
@@ -44,8 +45,9 @@ import Bai1_lab5 from './labs/lab5/Bai1_lab5';
 import Bai2_lab5 from './labs/lab5/Bai2_lab5';
 import Bai3_lab5 from './labs/lab5/Bai3_lab5';
 import Bai4_lab5 from './labs/lab5/Bai4_lab5';
-import Bai1_lab6 from './labs/lab6/Bai1_lab6_PageChinh'; 
+import Bai1_lab6 from './labs/lab6/Bai1_lab6_PageChinh';
 import Bai1_2_lab6 from './labs/lab6/Bai1_2_lab6_NavigationStack';
+import Bai2_lab6_drawerNavigation from './labs/lab6/Bai2_lab6_drawerNavigation';
 
 // import assignment
 import Asm1 from './assignment/Asm1';
@@ -69,14 +71,27 @@ function App(): React.JSX.Element {
     //   </View>
     // </SafeAreaView>
 
-    <AppProvider>
-      <SafeAreaView style={{ flex: 1 }}>
-        <StatusBar />
-        {/* <AppNavigation /> */}
-        <Bai1_2_lab6/>
-      </SafeAreaView>
-    </AppProvider>
+    // <AppProvider>
+    //   <SafeAreaView style={{ flex: 1 }}>
+    //     <StatusBar />
+    //     {/* <AppNavigation /> */}
+    //     <Bai1_2_lab6/>
+    //   </SafeAreaView>
+    // </AppProvider>
    
+    <SafeAreaView style={{ flex: 1 }}>
+      <StatusBar />
+      {/* <Demo12_navigationStack /> */}
+      {/* <Demo11_1_nextPage/> */}
+      {/* <Bai1_lab6 /> */}
+      {/* <Bai1_2_lab6/> */}
+      <Bai2_lab6_drawerNavigation />
+
+    </SafeAreaView>
+
+
+
+
 
 
     // bai2_lab5
