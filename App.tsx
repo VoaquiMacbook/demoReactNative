@@ -71,23 +71,24 @@ function App(): React.JSX.Element {
     //   </View>
     // </SafeAreaView>
 
-    // <AppProvider>
-    //   <SafeAreaView style={{ flex: 1 }}>
-    //     <StatusBar />
-    //     {/* <AppNavigation /> */}
-    //     <Bai1_2_lab6/>
-    //   </SafeAreaView>
-    // </AppProvider>
+    <AppProvider>
+      <SafeAreaView style={{ flex: 1 }}>
+        <StatusBar />
+        {/* <AppNavigation /> */}
+        <Bai2_lab6_drawerNavigation />
+        {/* <Bai1_2_lab6/> */}
+      </SafeAreaView>
+    </AppProvider>
    
-    <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar />
-      {/* <Demo12_navigationStack /> */}
-      {/* <Demo11_1_nextPage/> */}
-      {/* <Bai1_lab6 /> */}
-      {/* <Bai1_2_lab6/> */}
-      <Bai2_lab6_drawerNavigation />
+    // <SafeAreaView style={{ flex: 1 }}>
+    //   <StatusBar />
+    //   {/* <Demo12_navigationStack /> */}
+    //   {/* <Demo11_1_nextPage/> */}
+    //   {/* <Bai1_lab6 /> */}
+    //   {/* <Bai1_2_lab6/> */}
+    //   <Bai2_lab6_drawerNavigation />
 
-    </SafeAreaView>
+    // </SafeAreaView>
 
 
 

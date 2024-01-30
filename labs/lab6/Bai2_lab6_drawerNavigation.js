@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { Button, View } from 'react-native';
+import { Button, View, StyleSheet } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
-
+import Bai1_lab6 from './Bai1_lab6_PageChinh';
+import Bai1_3_lab6_PagechiTiet from './Bai1_3_lab6_PagechiTiet';
 function HomeScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -26,10 +27,10 @@ const Drawer = createDrawerNavigator();
 
 const Bai2_lab6_drawerNavigation = () => {
     return (
-        <NavigationContainer>
-          <Drawer.Navigator initialRouteName="Home">
-            <Drawer.Screen name="Home" component={HomeScreen} />
-            <Drawer.Screen name="Notifications" component={NotificationsScreen} />
+        <NavigationContainer> 
+          <Drawer.Navigator initialRouteName="Màng hình chính">
+            <Drawer.Screen name="Màng hình chính" component={Bai1_lab6} />
+            <Drawer.Screen name="màng hình chi tiết" component={Bai1_3_lab6_PagechiTiet} />
           </Drawer.Navigator>
         </NavigationContainer>
       );
