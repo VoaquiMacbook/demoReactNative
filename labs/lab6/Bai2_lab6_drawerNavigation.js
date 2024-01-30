@@ -8,6 +8,7 @@ import Bai1_3_lab6_PagechiTiet from './Bai1_3_lab6_PagechiTiet';
 import Bai1_lab5 from '../lab5/Bai1_lab5';
 import Bai2_lab5 from '../lab5/Bai2_lab5';
 import Bai4_lab5 from '../lab5/Bai4_lab5';
+
 function HomeScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
