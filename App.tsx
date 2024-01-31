@@ -51,6 +51,7 @@ import Bai1_lab6 from './labs/lab6/Bai1_lab6_PageChinh';
 import Bai1_2_lab6 from './labs/lab6/Bai1_2_lab6_NavigationStack';
 import Bai2_lab6_drawerNavigation from './labs/lab6/Bai2_lab6_drawerNavigation';
 import Bai1_lab7 from './labs/lab7/Bai1_lab7';
+import Bai2_lab7 from './labs/lab7/Bai2_lab7';
 // import assignment
 import Asm1 from './assignment/Asm1';
 // asm
@@ -82,7 +83,8 @@ function App(): React.JSX.Element {
         {/* <Bai1_2_lab6/> */}
         {/* <Demo_BottomNavigation /> */}
         {/* <Bai1_lab7 /> */}
-        <Demo_TopTap/>
+        {/* <Demo_TopTap/> */}
+        <Bai2_lab7/>
       </SafeAreaView>
     </AppProvider>
 
