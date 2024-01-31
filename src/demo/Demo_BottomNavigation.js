@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, Button, Image } from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import Ionicons from 'react-native-vector-icons/FontAwesome';
 function HomeScreen({ navigation }) {
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -57,4 +57,6 @@ const Demo_BottomNavigation = (props) => {
 
 export default Demo_BottomNavigation
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    
+})
