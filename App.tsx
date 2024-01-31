@@ -27,6 +27,7 @@ import Demo8_1_modal from './src/demo/Demo9_1_modal';
 import Demo9_2_toogle from './src/demo/Demo9_2_toogle';
 import Demo11_1_nextPage from './src/demo/Demo11_1_navigationStack_2';
 import Demo12_navigationStack from './src/demo/Demo12_navigationStack';
+import Demo_BottomNavigation from './src/demo/Demo_BottomNavigation';
 // import demo js nangCao
 import Arrays from './java_js_nangcao/section9/Arrays';
 import Objects from './java_js_nangcao/section9/Objects';
@@ -78,7 +79,8 @@ function App(): React.JSX.Element {
         <StatusBar />
         {/* <AppNavigation /> */}
         {/* <Bai2_lab6_drawerNavigation /> */}
-        <Bai1_2_lab6/>
+        {/* <Bai1_2_lab6/> */}
+        <Demo_BottomNavigation />
       </SafeAreaView>
     </AppProvider>
 

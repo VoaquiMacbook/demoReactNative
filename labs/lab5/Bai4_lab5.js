@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 import { ImageBackground, StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 
-const Bai4_lab5 = () => {
+const Bai4_lab5 = (props) => {
   const [securePassword, setSecurePassword] = useState(true)
+  const { navigation } = props;
+  const goBack = () => {
+    // navigation.navigate('Bai1_lab6_PageChinh'); // goBack C1
+    navigation.goBack();                           // goBack C2 
+    //  goBack C3  chuyền thẳng  onPress={navigation.goBack}
+  }
   return (
     <View>
       <ImageBackground source={{ uri: 'https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/423672434_1623061655101384_6595356168272493585_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=104&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=mos980koSWoAX8Hnz8G&_nc_ht=scontent.fsgn2-5.fna&oh=00_AfC6jd_8JDIHXc9lhzt_zeGfNnEKjSJMdol_vGG7s1Z6_w&oe=65BB5E15' }}>
