@@ -28,6 +28,7 @@ import Demo9_2_toogle from './src/demo/Demo9_2_toogle';
 import Demo11_1_nextPage from './src/demo/Demo11_1_navigationStack_2';
 import Demo12_navigationStack from './src/demo/Demo12_navigationStack';
 import Demo_BottomNavigation from './src/demo/Demo_BottomNavigation';
+import Demo_TopTap from './src/demo/Demo_TopTap';
 // import demo js nangCao
 import Arrays from './java_js_nangcao/section9/Arrays';
 import Objects from './java_js_nangcao/section9/Objects';
@@ -49,7 +50,7 @@ import Bai4_lab5 from './labs/lab5/Bai4_lab5';
 import Bai1_lab6 from './labs/lab6/Bai1_lab6_PageChinh';
 import Bai1_2_lab6 from './labs/lab6/Bai1_2_lab6_NavigationStack';
 import Bai2_lab6_drawerNavigation from './labs/lab6/Bai2_lab6_drawerNavigation';
-
+import Bai1_lab7 from './labs/lab7/Bai1_lab7';
 // import assignment
 import Asm1 from './assignment/Asm1';
 // asm
@@ -68,9 +69,8 @@ function App(): React.JSX.Element {
     //   <View>
     //     {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
     //     {/* <Asm1></Asm1> */}
-    //     {/* <Bai1_lab5/> */}
-    //     {/* <Bai2_lab5/> */}
-    //     {/* <Bai4_lab5/> */}
+   
+
     //   </View>
     // </SafeAreaView>
 
@@ -80,7 +80,9 @@ function App(): React.JSX.Element {
         {/* <AppNavigation /> */}
         {/* <Bai2_lab6_drawerNavigation /> */}
         {/* <Bai1_2_lab6/> */}
-        <Demo_BottomNavigation />
+        {/* <Demo_BottomNavigation /> */}
+        {/* <Bai1_lab7 /> */}
+        <Demo_TopTap/>
       </SafeAreaView>
     </AppProvider>
 

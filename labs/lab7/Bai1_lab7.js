@@ -41,7 +41,7 @@ function HistoryScreen({ navigation }) {
 }
 const Tab = createBottomTabNavigator();
 
-const Demo_BottomNavigation = (props) => {
+const Bai1_lab7 = (props) => {
   return (
     <NavigationContainer>
       <Tab.Navigator
@@ -60,27 +60,27 @@ const Demo_BottomNavigation = (props) => {
             let iconName = focused;
             if (route.name == 'Home') {
               if (iconName) {
-                return <Image style={styles.ic_bottom} source={require('../assets/images/ic_home.png')} />
+                return <Image style={styles.ic_bottom} source={require('../../assets/images/ic_home.png')}/>
               }
-              return <Image style={{ tintColor: 'gray' }} source={require('../assets/images/ic_home.png')} />
+              return <Image style={{ tintColor: 'gray' }} source={require('../../assets/images/ic_home.png')} />
             }
             if (route.name == 'Settings') {
               if (iconName) {
-                return <Image style={styles.ic_bottom} source={require('../assets/images/ic_payment.png')} />
+                return <Image style={styles.ic_bottom} source={require('../../assets/images/ic_payment.png')} />
               }
-              return <Image style={{ tintColor: 'gray' }} source={require('../assets/images/ic_payment.png')} />
+              return <Image style={{ tintColor: 'gray' }} source={require('../../assets/images/ic_payment.png')} />
             }
             if (route.name == 'payment') {
               if (iconName) {
-                return <Image style={styles.ic_bottom} source={require('../assets/images/ic_logout.png')} />
+                return <Image style={styles.ic_bottom} source={require('../../assets/images/ic_logout.png')} />
               }
-              return <Image style={{ tintColor: 'gray' }} source={require('../assets/images/ic_logout.png')} />
+              return <Image style={{ tintColor: 'gray' }} source={require('../../assets/images/ic_logout.png')} />
             }
             if (route.name == 'history') {
               if (iconName) {
-                return <Image style={styles.ic_bottom} source={require('../assets/images/ic_payment.png')} />
+                return <Image style={styles.ic_bottom} source={require('../../assets/images/ic_payment.png')} />
               }
-              return <Image style={{ tintColor: 'gray' }} source={require('../assets/images/ic_payment.png')} />
+              return <Image style={{ tintColor: 'gray' }} source={require('../../assets/images/ic_payment.png')} />
             }
 
 
@@ -97,7 +97,7 @@ const Demo_BottomNavigation = (props) => {
   )
 }
 
-export default Demo_BottomNavigation
+export default Bai1_lab7
 
 const styles = StyleSheet.create({
   //custom ic bottom
