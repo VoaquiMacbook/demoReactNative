@@ -56,9 +56,10 @@ import Bai3_lab7 from './labs/lab7/Bai3_lab7';
 // import assignment
 import Asm1 from './assignment/Asm1';
 // asm
-import Login from './assignment/Login';
-import Setting from './src/app/main/stacks/Setting';
-import Personal from './src/app/main/stacks/Personal';
+// import Login from './assignment/Login';
+// import Setting from './src/app/main/stacks/Setting';
+// import Personal from './src/app/main/stacks/Personal';
+import Home from './src/app/main/tabs/Home';
 
 
 
@@ -86,8 +87,8 @@ function App(): React.JSX.Element {
         {/* <Bai1_lab7 /> */}
         {/* <Demo_TopTap/> */}
         {/* <Bai2_lab7/> */}
-        <Bai3_lab7/>
-       
+        {/* <Bai3_lab7/> */}
+       <Home/>
       </SafeAreaView>
     </AppProvider>
 

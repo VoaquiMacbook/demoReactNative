@@ -10,7 +10,17 @@ const Tab = createBottomTabNavigator();
 
 const MainTabNavigation = () => {
     return (
-        <Tab.Navigator screenOptions={{ headerShown: false }}>
+        <Tab.Navigator 
+        screenOptions={{ 
+            headerStyle:{
+               
+            },
+            tabBarStyle:{
+                backgroundColor:'black',
+                paddingBottom:8,
+            },
+            headerShown: false }}
+        >
             <Tab.Screen name="Home" component={Home} />
             <Tab.Screen name="History" component={History} />
             <Tab.Screen name="Favorite" component={Favorite} />
