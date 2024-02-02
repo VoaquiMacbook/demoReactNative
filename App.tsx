@@ -54,6 +54,7 @@ import Bai1_lab7 from './labs/lab7/Bai1_lab7';
 import Bai2_lab7 from './labs/lab7/Bai2_lab7';
 import Bai3_lab7 from './labs/lab7/Bai3_lab7';
 import Bai1_lab8 from './labs/lab8/Bai1_lab8';
+import Lab8Main from './labs/lab8/Lab8Main';
 // import assignment
 import Asm1 from './assignment/Asm1';
 
@@ -64,16 +65,14 @@ function App(): React.JSX.Element {
   return (
     // test labs
 
-
-    <SafeAreaView>
-      <StatusBar />
-      <View>
-        {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
-        {/* <Asm1></Asm1> */}
-
-        <Bai1_lab8/>
-      </View>
-    </SafeAreaView>
+    <AppProvider>
+      <SafeAreaView style={{flex:1}}>
+        <StatusBar />
+          {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
+          {/* <Asm1></Asm1> */}
+          <Lab8Main />
+      </SafeAreaView>
+    </AppProvider>
 
     // <AppProvider >
     //   <SafeAreaView style={{ flex: 1, backgroundColor: 'black' }}>
@@ -87,7 +86,7 @@ function App(): React.JSX.Element {
     //     {/* <Bai2_lab7/> */}
     //     {/* <Bai3_lab7/> */} 
     //     {/* <AppNavigation /> */}
-   
+
     //   </SafeAreaView>
     // </AppProvider>
 
