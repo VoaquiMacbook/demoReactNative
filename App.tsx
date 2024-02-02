@@ -90,7 +90,6 @@ function App(): React.JSX.Element {
         {/* <Bai2_lab7/> */}
         {/* <Bai3_lab7/> */}
 
-
         <AppNavigation />
         {/* <Home/> */}
       </SafeAreaView>
