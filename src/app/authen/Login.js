@@ -126,10 +126,6 @@ const Login = (props) => {
                 <TouchableOpacity
                     style={styles.eyeImg}
                     onPress={toggleSecureTextEntry}>
-                    {/* <Image
-                            source={require('../../assets/images/ic_eye.png')}
-                        /> */}
-                    {/* <Text>🔐</Text> : <Text>🔓</Text> */}
                     {
                         secureTextEntry ?
                         <Text>🔐</Text> 
