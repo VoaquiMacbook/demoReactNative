@@ -39,7 +39,7 @@ const Asm1_2 = () => {
           onChangeText={text => setName(text)}>
         </TextInput>
         <TouchableOpacity
-          onPress={() => setSecurePassword(!securePassword)} f
+          onPress={() => setSecurePassword(!securePassword)} 
           style={asmStyle.ic_eye02}>
           {
             securePassword ?

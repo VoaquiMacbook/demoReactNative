@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, ToastAndroid, Alert } from 'react-native'
+import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, ToastAndroid, Alert, Modal, Pressable, ImageBackground } from 'react-native'
 import React, { useState, useContext } from 'react'
 import { AppContext } from '../AppContext';
 import AxiosInstance from './helpers/AxiosInstance';
@@ -13,7 +13,8 @@ const Login = (props) => {
     const [bugPassword, setBugPassword] = useState('');
     const [canLogIn, setCanLogin] = useState(false);
     const { navigation } = props;
-
+    const [modalVisible, setModalVisible] = useState(false);
+    const [securePassword, setSecurePassword] = useState(true);
     const changeEmail = (email) => {
         setEmail(email);
         if (email !== '') {
@@ -38,19 +39,19 @@ const Login = (props) => {
     const login = async () => {
         changeEmail(email);
         changePassword(password);
-    
+
         if (email !== '' && password !== '') {
             setCanLogin(true);
-    
+
             try {
                 const body = {
                     email: email,
                     password: password
                 };
                 const response = await AxiosInstance().post(`/users/login`, body);
-            
+
                 console.log(response);
-    
+
                 if (response.status) {
                     setIsLogin(true);
                     // Chuyển hướng đến màn hình Home
@@ -60,13 +61,13 @@ const Login = (props) => {
                 }
             } catch (error) {
                 console.log(error.response);
-                if (!error.status){
-                    Alert.alert('Tài khoản hoặc mật khẩu sai');
+                if (!error.status) {
+                    Alert.alert(('Tài khoản hoặc mật khẩu sai  ❌'));
                 }
-            }            
+            }
         }
     };
-    
+
 
     const register = () => {
         navigation.navigate('Register');
@@ -83,13 +84,13 @@ const Login = (props) => {
 
     return (
         <View style={styles.container}>
-            <View style={styles.logo}>
+            <View style={styles.logoImage}>
                 <Image
                     style={styles.logoImage}
-                    source={require('../../assets/images/logo.png')} />
+                    source={require('../../assets/images/git2.png')} />
             </View>
             <View style={styles.welcomeContainer}>
-                <Text style={styles.welcome}>Welcome to Lungo!!</Text>
+                <Text style={styles.welcome}>Welcome to Coffee shop!!</Text>
             </View>
             <View style={styles.loginContainer}>
                 <Text style={styles.login}>Login to continue</Text>
@@ -125,9 +126,16 @@ const Login = (props) => {
                 <TouchableOpacity
                     style={styles.eyeImg}
                     onPress={toggleSecureTextEntry}>
-                    <Image
-                        source={require('../../assets/images/ic_eye.png')}
-                    />
+                    {/* <Image
+                            source={require('../../assets/images/ic_eye.png')}
+                        /> */}
+                    {/* <Text>🔐</Text> : <Text>🔓</Text> */}
+                    {
+                        secureTextEntry ?
+                        <Text>🔐</Text> 
+                            :
+                            <Text>🔓</Text>
+                    }
                 </TouchableOpacity>
                 {bugPassword !== '' && <Text style={styles.textBug}>
                     {bugPassword}
@@ -166,6 +174,7 @@ const Login = (props) => {
             </View>
 
         </View >
+
     )
 }
 
@@ -333,8 +342,12 @@ const styles = StyleSheet.create({
         letterSpacing: 0.5,
     },
     logoImage: {
-        width: 93,
-        height: 78,
+        width: '100%',
+        height: 250,
+        shadowColor: 'white',
+        shadowRadius: 5,
+        shadowOpacity: 0.1,
+        borderRadius: 10,
     },
     container: {
         width: '100%',
@@ -343,5 +356,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         padding: 14,
+        shadowColor: 'white',
+        shadowRadius: 10,
+        shadowOpacity: 10,
     },
+
 })
