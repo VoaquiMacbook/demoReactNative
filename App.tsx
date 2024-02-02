@@ -53,47 +53,43 @@ import Bai2_lab6_drawerNavigation from './labs/lab6/Bai2_lab6_drawerNavigation';
 import Bai1_lab7 from './labs/lab7/Bai1_lab7';
 import Bai2_lab7 from './labs/lab7/Bai2_lab7';
 import Bai3_lab7 from './labs/lab7/Bai3_lab7';
+import Bai1_lab8 from './labs/lab8/Bai1_lab8';
 // import assignment
 import Asm1 from './assignment/Asm1';
-// asm
-// import Login from './assignment/Login';
-// import Setting from './src/app/main/stacks/Setting';
-// import Personal from './src/app/main/stacks/Personal';
-import Home from './src/app/main/tabs/Home';
-import Login from './src/app/authen/Login'
-import AuthenStackNavigation from './src/app/authen/AuthenStackNavigation';
 
 
 
 function App(): React.JSX.Element {
 
   return (
-    // <SafeAreaView>
-    //   <StatusBar />
-    //   <View>
-    //     {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
-    //     {/* <Asm1></Asm1> */}
+    // test labs
 
 
-    //   </View>
-    // </SafeAreaView>
+    <SafeAreaView>
+      <StatusBar />
+      <View>
+        {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
+        {/* <Asm1></Asm1> */}
 
-    <AppProvider >
-      <SafeAreaView style={{ flex: 1, backgroundColor: 'black' }}>
-        <StatusBar />
+        <Bai1_lab8/>
+      </View>
+    </SafeAreaView>
 
-        {/* <Bai2_lab6_drawerNavigation /> */}
-        {/* <Bai1_2_lab6/> */}
-        {/* <Demo_BottomNavigation /> */}
-        {/* <Bai1_lab7 /> */}
-        {/* <Demo_TopTap/> */}
-        {/* <Bai2_lab7/> */}
-        {/* <Bai3_lab7/> */}
+    // <AppProvider >
+    //   <SafeAreaView style={{ flex: 1, backgroundColor: 'black' }}>
+    //     <StatusBar />
 
-        <AppNavigation />
-        {/* <Home/> */}
-      </SafeAreaView>
-    </AppProvider>
+    //     {/* <Bai2_lab6_drawerNavigation /> */}
+    //     {/* <Bai1_2_lab6/> */}
+    //     {/* <Demo_BottomNavigation /> */}
+    //     {/* <Bai1_lab7 /> */}
+    //     {/* <Demo_TopTap/> */}
+    //     {/* <Bai2_lab7/> */}
+    //     {/* <Bai3_lab7/> */} 
+    //     {/* <AppNavigation /> */}
+   
+    //   </SafeAreaView>
+    // </AppProvider>
 
 
     // bai2_lab5
