@@ -60,7 +60,8 @@ import Asm1 from './assignment/Asm1';
 // import Setting from './src/app/main/stacks/Setting';
 // import Personal from './src/app/main/stacks/Personal';
 import Home from './src/app/main/tabs/Home';
-
+import Login from './src/app/authen/Login'
+import AuthenStackNavigation from './src/app/authen/AuthenStackNavigation';
 
 
 
@@ -72,15 +73,15 @@ function App(): React.JSX.Element {
     //   <View>
     //     {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
     //     {/* <Asm1></Asm1> */}
-   
+
 
     //   </View>
     // </SafeAreaView>
 
-    <AppProvider>
-      <SafeAreaView style={{ flex: 1 }}>
+    <AppProvider >
+      <SafeAreaView style={{ flex: 1, backgroundColor: 'black' }}>
         <StatusBar />
-        {/* <AppNavigation /> */}
+
         {/* <Bai2_lab6_drawerNavigation /> */}
         {/* <Bai1_2_lab6/> */}
         {/* <Demo_BottomNavigation /> */}
@@ -88,7 +89,10 @@ function App(): React.JSX.Element {
         {/* <Demo_TopTap/> */}
         {/* <Bai2_lab7/> */}
         {/* <Bai3_lab7/> */}
-       <Home/>
+
+
+        <AppNavigation />
+        {/* <Home/> */}
       </SafeAreaView>
     </AppProvider>
 

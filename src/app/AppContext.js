@@ -1,14 +1,30 @@
-import React, { useState, useContext, createContext } from 'react'
+import React, { createContext, useState } from 'react';
 
-// tạo context
-export const AppContext = createContext()
-// tạo dữ liệu dùng chung cho app
+export const AppContext = createContext();
+
 export const AppProvider = (props) => {
-    const [isLogin, setIsLogin] = useState(false);
-    const [cart, setCart] = useState([]);
-    return (
-        <AppContext.Provider value={{ isLogin, setIsLogin, cart, setCart }}>
-            {props.children}
-        </AppContext.Provider>
-    )
-}
+  const { children } = props;
+  const [cart, setCart] = useState([]);
+  const [isLogin, setIsLogin] = useState(true);
+  const [heart, setHeart] = useState([]);
+  const [productFavorites, setProductFavorites] = useState([]);
+  const [paycart, setPaycart] = useState([]);
+  const [nameInfo, setNameInfo] = useState("");
+  const [emailInfo, setEmailInfo] = useState("");
+  
+  return (
+    <AppContext.Provider
+      value={{ 
+        cart, setCart, 
+        isLogin, setIsLogin, 
+        heart, setHeart,
+        productFavorites, setProductFavorites,
+        paycart, setPaycart,
+        nameInfo, setNameInfo,
+        emailInfo, setEmailInfo
+      }}
+    >
+      {children}
+    </AppContext.Provider>
+  );
+};

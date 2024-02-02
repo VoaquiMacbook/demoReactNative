@@ -1,191 +1,196 @@
-import { StyleSheet, Text, View, TouchableOpacity, Image, TextInput } from 'react-native'
-import React from 'react'
+import { StyleSheet, ScrollView, Text, View, TouchableOpacity, Image, TextInput } from 'react-native'
+import React, { useState } from 'react'
 
-const Personal = () => {
+const Personal = (props) => {
+
+  const { navigation } = props;
+  const [secureTextEntry, secure] = useState(true);
+  const [ResecureTextEntry, setResecureTextEntry] = useState(true);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+
+  const showPassword = () => {
+    secure(!secureTextEntry);
+  }
+
+  const showPasswordConfirm = () => {
+    setResecureTextEntry(!ResecureTextEntry);
+  }
+
   return (
-    <View style={asmStyle.containerAll}>
-      <View>
-        {/* <Text style={asmStyle.txt_color}>Asm1_settingedit_1</Text> */}
-        <View style={{ marginTop: 10 }}>
-          <View style={asmStyle.view_container_2_01}>
-            <View style={asmStyle.view_row01}>
-              <View>
-                <TouchableOpacity style={[asmStyle.btn_setting01]}>
-                  <View style={asmStyle.img_container01}>
-                    <Image style={asmStyle.img01} source={require('../../../assets/images/arrow_left.png')}></Image>
-                  </View>
-                </TouchableOpacity>
-              </View>
-              <View style={asmStyle.textColumn01}>
-                <Text style={asmStyle.view_text_2_01}>Setting</Text>
-              </View>
-            </View>
-          </View>
+    <View style={styles.container}>
+      <ScrollView>
+        <View style={styles.bar_navigation}>
+          <TouchableOpacity style={styles.back_navigation} onPress={navigation.goBack}>
+            <Image source={require('../../../assets/images/ic_back.png')} />
+          </TouchableOpacity>
+          <Text style={styles.text_navigation}>Setting</Text>
         </View>
-      </View>
-      <View>
-        {/* <Text style={asmStyle.txt_color}>Asm1_settingedit_2</Text> */}
-        <View style={[asmStyle.container02]}>
-          {/* <Text style={asmStyle.txt_color}>Asm1_1</Text> */}
-          <View style={{ alignItems: 'center' }}>
-            <Image style={asmStyle.img02} source={require('../../../assets/images/img_avt.png')}>
-            </Image>
-          </View>
+        <View style={styles.imgPersonal}>
+          <Image source={require('../../../assets/images/img_personal.png')} />
         </View>
-      </View>
-      <View>
-        {/* <Text style={asmStyle.txt_color}>Asm1_settingedit_3</Text> */}
-        <View style={{ marginTop: 50 }}>
-          <View>
+        <View style={styles.infoContainer}>
+          <View style={[styles.inputContainer, { marginTop: 31, }]}>
             <TextInput
-              placeholder=' Name'
-              keyboardType='default'
-              style={[asmStyle.ip_input03, asmStyle.ip_color03]}>
+              style={styles.input}
+              placeholder="Name"
+              placeholderTextColor="#828282"
+              // autoCapitalize="characters"
+              autoCorrect={true}
+              keyboardType="default"
+            >
+              <Text>Võ A Qui</Text>
             </TextInput>
           </View>
-          <View style={{ marginTop: 20 }}>
+          <View style={styles.inputContainer}>
             <TextInput
-              placeholder='Emaill'
-              keyboardType='email-address'
-              secureTextEntry={true}
-              style={[asmStyle.ip_input03, asmStyle.ip_color03]}>
+              style={styles.input}
+              placeholder="Email"
+              placeholderTextColor="#828282"
+              autoCapitalize="none"
+              autoCorrect={false}
+              keyboardType="email-address"
+            >
+              <Text>aqui123@gmail.com</Text>
             </TextInput>
           </View>
-          <View style={{ marginTop: 20 }}>
+
+          <View style={[styles.inputContainer, { marginTop: 16 }]}>
             <TextInput
-              placeholder='Password'
-              keyboardType='default'
-              secureTextEntry={true}
-              style={[asmStyle.ip_input03, asmStyle.ip_color03]}>
-            </TextInput>
+              style={styles.input}
+              placeholder="Password"
+              placeholderTextColor="#828282"
+              autoCapitalize="none"
+              autoCorrect={false}
+              secureTextEntry={secureTextEntry}
+            />
+            <TouchableOpacity
+              style={styles.eyeImg}
+              onPress={showPassword}>
+              <Image
+                source={require('../../../assets/images/ic_eye.png')}
+              />
+            </TouchableOpacity>
+
           </View>
-          <View style={{ marginTop: 20 }}>
+          <View style={[styles.inputContainer, { marginTop: 16 }]}>
             <TextInput
-              placeholder='Re-type-password'
-              keyboardType='default'
-              secureTextEntry={true}
-              style={[asmStyle.ip_input03, asmStyle.ip_color03]}>
-            </TextInput>
+              style={styles.input}
+              placeholder="Re-type password"
+              placeholderTextColor="#828282"
+              autoCapitalize="none"
+              autoCorrect={false}
+              secureTextEntry={ResecureTextEntry}
+            />
+            <TouchableOpacity
+              style={styles.eyeImg}
+              onPress={showPasswordConfirm}>
+              <Image
+                source={require('../../../assets/images/ic_eye.png')}
+              />
+            </TouchableOpacity>
+
           </View>
+
+          <TouchableOpacity
+            style={[styles.buttonContainer, { marginTop: 41 }]}
+            onPress={null} >
+            <Text style={styles.buttonText}>Save</Text>
+          </TouchableOpacity>
         </View>
-      </View>
-      <View>
-      {/* <Text style={asmStyle.txt_color}>Asm1_settingedit_4</Text> */}
-      <View>
-            <View style={{ marginTop: 30 }}>
-                <TouchableOpacity
-                    style={asmStyle.btn_container04}>
-                    <Text style={asmStyle.btn_text04}>Save</Text>
-                </TouchableOpacity>
-            </View>
-        </View>
-    </View>
+      </ScrollView>
     </View>
   )
 }
 
 export default Personal
 
-const asmStyle = StyleSheet.create({
-  containerAll: {
-    width: '100%',
-    height: '100%',
-    backgroundColor: 'black',
-    padding: 26,
+const styles = StyleSheet.create({
+  eyeImg: {
+    width: 30,
+    height: 18,
+    position: 'absolute',
+    right: 17,
+    top: 15,
   },
-  // custom text
-  txt_color01: {
-    color: 'white'
-  },
-  // custom view
-  view_container_2_01: {
-    width: '99%',
-    height: 60,
-    borderRadius: 20,
-  },
-  view_text_2_01: {
-    lineHeight: 53,
+  buttonText: {
     color: 'white',
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginHorizontal: '36%',
-
-
+    fontSize: 14,
+    fontFamily: 'Poppins',
+    fontWeight: '700',
+    lineHeight: 26,
+    letterSpacing: 0.50,
+    // wordWrap: 'break-word',
   },
-  view_row01: {
-    flexDirection: 'row',
+  buttonContainer: {
+    width: '100%',
+    height: 57,
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: 41,
+    borderRadius: 20,
+    backgroundColor: '#D17842',
   },
-  textColumn01: {
-    flex: 1, // Để text chiếm phần còn lại của dòng
-  },
-  // custom img
-  img01: {
-    width: 20,
-    height: 20,
-    marginVertical: '20%',
-  },
-  img_container01: {
+  input: {
     width: '100%',
-    height: '100%',
+    height: 48,
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#252a32',
+    fontFamily: 'Poppins',
+    fontWeight: '700',
+    paddingHorizontal: 17,
+    paddingVertical: 11,
+    backgroundColor: '#0C0F14',
+    color: '#828282'
+
+  },
+  inputContainer: {
+    width: '100%',
+    marginTop: 16,
+  },
+  infoContainer: {
+    marginTop: 73
+  },
+  imgPersonal: {
+    width: '100%',
+    height: 153,
+    // position: 'absolute',
+    justifyContent: 'center',
+    display: 'flex',
+    alignItems: 'center',
+    top: 41,
+  },
+  text_navigation: {
+    color: '#fff',
+    fontSize: 20,
+    fontWeight: '600',
+    fontStyle: 'normal',
+    fontFamily: 'Poppins',
+    alignItems: 'center',
+  },
+  back_navigation: {
+    width: 30,
+    height: 30,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+  },
+  bar_navigation: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
     alignItems: 'center'
   },
-  // custom button setting
-  btn_setting01: {
-    width: 33,
-    height: 35,
-    backgroundColor: '#868584',
-    borderRadius: 10,
-    marginStart: 5,
-  },
-  container02: {
-    flexDirection: 'column',
-  },
-  // custom text
-  txt_color02: {
-    color: 'white',
-
-  },
-  // custom img
-  img02: {
-    width: 150,
-    height: 150,
-    marginTop: 20,
-  },
-  // custom text
-  txt_color03: {
-    color: 'white'
-  },
-  // custom input
-  ip_input03: {
-    borderWidth: 1,
-    borderColor: 'gray',
-    borderRadius: 10,
-    height: 60,
-    backgroundColor: 'white'
-  },
-  ip_color03: {
-    color: 'gray',
-    paddingStart: 10,
-  },
-   // custom text
-   txt_color04: {
-    color: 'white'
-},
-btn_container04: {
-    flexDirection: 'column',
-    backgroundColor: '#FA7C0F',
-    width: '99%',
-    height: 60,
-    borderRadius: 20,
-},
-btn_text04: {
-    textAlign: 'center',
-    lineHeight: 53,
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: 17,
-
-},
+  container: {
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#0C0F14',
+    paddingStart: 20,
+    paddingTop: 21,
+    paddingEnd: 20,
+  }
 })

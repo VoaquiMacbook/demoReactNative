@@ -5,7 +5,7 @@ const AxiosInstance = (contentType = 'application/json') => {
     const axiosInstance = axios.create({
         baseURL: 'https://cro101-b166e76cc76a.herokuapp.com/'
     });
-// cau hinh gui di
+
     axiosInstance.interceptors.request.use(
         async (config) => {
             // const token = await AsyncStorage.getItem('token');
@@ -19,7 +19,7 @@ const AxiosInstance = (contentType = 'application/json') => {
         },
         err => Promise.reject(err)
     );
-// cau hinh nhan ve
+
     axiosInstance.interceptors.response.use(
         res => res.data,
         err => Promise.reject(err)
