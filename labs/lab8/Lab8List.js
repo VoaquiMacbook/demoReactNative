@@ -75,7 +75,7 @@ const Lab8List = (props) => {
             }).start(() => {
                 setAnimating(false);
                 opacityValue.setValue(0);
-                navigation.navigate('Lab8Detail');
+                navigation.navigate('Lab8Create');
             });
         }
     };

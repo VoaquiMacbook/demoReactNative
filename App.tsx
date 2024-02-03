@@ -85,7 +85,7 @@ function App(): React.JSX.Element {
     //     {/* <Demo_TopTap/> */}
     //     {/* <Bai2_lab7/> */}
     //     {/* <Bai3_lab7/> */} 
-    //     {/* <AppNavigation /> */}
+    //     <AppNavigation />
 
     //   </SafeAreaView>
     // </AppProvider>
