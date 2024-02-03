@@ -65,30 +65,30 @@ function App(): React.JSX.Element {
   return (
     // test labs
 
-    <AppProvider>
-      <SafeAreaView style={{flex:1}}>
-        <StatusBar />
-          {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
-          {/* <Asm1></Asm1> */}
-          <Lab8Main />
-      </SafeAreaView>
-    </AppProvider>
-
-    // <AppProvider >
-    //   <SafeAreaView style={{ flex: 1, backgroundColor: 'black' }}>
+    // <AppProvider>
+    //   <SafeAreaView style={{flex:1}}>
     //     <StatusBar />
-
-    //     {/* <Bai2_lab6_drawerNavigation /> */}
-    //     {/* <Bai1_2_lab6/> */}
-    //     {/* <Demo_BottomNavigation /> */}
-    //     {/* <Bai1_lab7 /> */}
-    //     {/* <Demo_TopTap/> */}
-    //     {/* <Bai2_lab7/> */}
-    //     {/* <Bai3_lab7/> */} 
-    //     <AppNavigation />
-
+    //       {/* <Text style={styles.welcome}>Võ A Qui</Text> */}
+    //       {/* <Asm1></Asm1> */}
+    //       <Lab8Main />
     //   </SafeAreaView>
     // </AppProvider>
+
+    <AppProvider >
+      <SafeAreaView style={{ flex: 1, backgroundColor: 'black' }}>
+        <StatusBar />
+
+        {/* <Bai2_lab6_drawerNavigation /> */}
+        {/* <Bai1_2_lab6/> */}
+        {/* <Demo_BottomNavigation /> */}
+        {/* <Bai1_lab7 /> */}
+        {/* <Demo_TopTap/> */}
+        {/* <Bai2_lab7/> */}
+        {/* <Bai3_lab7/> */} 
+        <AppNavigation />
+
+      </SafeAreaView>
+    </AppProvider>
 
 
     // bai2_lab5
